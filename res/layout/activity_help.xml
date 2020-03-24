@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fundo_ajuda"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_help"
-    android:baselineAligned="false"
-    tools:context=".HelpActivity" >
+    android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/btnmenu"
+<Button
+        android:id="@+id/ButtonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="25dp"
-        android:layout_weight="0"
-        android:background="@drawable/btn_menu"/>
-        <!-- android:text="@string/btn_menu"  --> 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/botoes_menu"
+        android:width="180dp"
+        android:height="40dp" />
 
-    <Button
-        android:id="@+id/btnjogar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="0"
-        android:background="@drawable/btn_jogar"/>
-        <!--android:text="@string/btn_jogar" -->
-
-</LinearLayout>
+</RelativeLayout>

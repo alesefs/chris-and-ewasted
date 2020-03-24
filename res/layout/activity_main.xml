@@ -1,9 +1,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fundo_menu"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/splash"
-    tools:context=".MainActivity" >
+    android:layout_height="match_parent" >
 
+        <Button
+            android:id="@+id/ButtonJogar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ButtonSobre"
+            android:layout_alignBottom="@+id/ButtonSobre"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/botoes_jogar"
+            android:height="50dp"
+            android:width="90dp" />
+
+        <Button
+            android:id="@+id/ButtonSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="55dp"
+            android:layout_toLeftOf="@+id/ButtonJogar"
+            android:background="@drawable/botoes_sobre"
+            android:paddingRight="10dp"
+            android:height="50dp"
+            android:width="90dp" />
+
+        <Button
+            android:id="@+id/ButtonAjuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ButtonJogar"
+            android:layout_alignBottom="@+id/ButtonJogar"
+            android:layout_toRightOf="@+id/ButtonJogar"
+            android:background="@drawable/botoes_ajuda"
+            android:paddingLeft="10dp"
+			android:layout_marginBottom="55dp"
+            android:height="50dp"
+            android:width="90dp" />
 
 </RelativeLayout>
